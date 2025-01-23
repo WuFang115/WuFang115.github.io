@@ -1,2 +1,2 @@
-# WuFang115.hithub.io
+# WuFang115.github.io
 My Github PAGES repo
