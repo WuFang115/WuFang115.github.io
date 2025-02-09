@@ -1,0 +1,64 @@
+body {
+    font-family:'Times New Roman';
+    font-size: 18px;
+}
+
+header {
+    background-color: #FEEFE3;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 34px 0 14px 40px;
+}
+
+#my image {
+    box-shadow: 0 0 2px 1px black ;
+}
+
+ul li:nth-child(odd) {
+    background-color: rgb(182, 152, 162);
+}
+
+nav > ul {
+    background-color: rgb(182, 152, 162);
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: inherit;
+    display: block; 
+    font-size: 1.2rem;
+    padding: 10px;
+    text-decoration: none;  
+}
+
+nav li:hover {
+    background-color: rgb(157, 95, 115);
+    color: white;
+}
+
+.inline-block-nav {
+    text-align: left;
+    font-size: 0;   
+}
+
+.inline-block-nav > li {
+    display: inline-block;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #FEEFE3;
+}
+
+footer p {
+    margin: 0;
+}
+
+dd {
+    margin-left: 20px;
+}
