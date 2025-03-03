@@ -9,22 +9,23 @@
 <body>
     <!-- center the entire content -->
     <div class="container">
-        <header>
+        <header id="home">
             <img src="images/sailor_moon.jpg" alt="Background">
             <h1 class="site-title">Sailor moon</h1>
         </header>
 
         <nav>
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">STORY</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#story">STORY</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
 
         <main>
             <!-- Article Content -->
             <section class="article">
+                <header id="story"></header>
                 <h2>The Story of Sailor Moon</h2>
                 <img src="images/pink_poster.jpg" alt="Selfie">
                 <p>"Sailor Moon" is a legendary Japanese manga and anime series created by Naoko Takeuchi. The story follows a group of magical warrior girls, known as the Sailor Guardians, who are destined to protect Earth and the entire cosmos from dark and malevolent forces.
@@ -46,6 +47,7 @@
         
             <!-- Contact Form -->
             <section class="contact">
+                <header id="contact"></header>
                  <h2>Contact to learn more</h2>
                <form>
                    <label for="name">Your Name</label>
@@ -67,13 +69,13 @@
                 
                    <!-- Submit button -->
                    <button type="submit">SEND</button>
+                   <!-- Page Footer -->
+                   <footer>
+                      <p>&copy; 2025 Wu Fang </p>
+                   </footer>
                </form>
             </section>
         </main>
-         <!-- Page Footer -->
-        <footer>
-            <p>&copy; 2025 Wu Fang </p>
-        </footer>
     </div> <!-- End of container -->
 </body>
 </html>
