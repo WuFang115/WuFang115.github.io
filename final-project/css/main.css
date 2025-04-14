@@ -1,7 +1,5 @@
-/* 引入字型 */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
-/* 基本設置 */
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
@@ -22,7 +20,6 @@ img {
     height: auto;
 }
 
-/* 容器最大寬度 */
 .container {
     width: 100%;
     max-width: 1200px;
@@ -30,7 +27,6 @@ img {
     padding: 20px;
 }
 
-/* 顏色設置 */
 .primary-color {
     color: #c78c06;
 }
@@ -41,7 +37,6 @@ img {
     background-color: #222;
 }
 
-/* 頁首 */
 header {
     background: #fff;
     padding: 20px;
@@ -68,7 +63,7 @@ header nav ul li a:hover {
     color: #c78c06;
 }
 
-/* 主視覺區塊 */
+
 .main.banner {
     text-align: center;
     padding: 50px 20px;
@@ -81,7 +76,7 @@ header nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-/* 服務區塊：使用 CSS Grid */
+
 #services {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -108,14 +103,12 @@ button:hover {
     background-color: #222;
 }
 
-/* 手機螢幕 */
 @media (min-width: 760px) {
     header nav ul {
         justify-content: space-between;
     }
 }
 
-/* 桌面螢幕（大於 760px） */
 @media (min-width: 1200px) {
     .container {
         padding: 40px;
