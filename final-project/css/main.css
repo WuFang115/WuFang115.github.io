@@ -1,119 +1,229 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
-    color: #222;
-}
-
-/* Reset */
-*,
-*::before,
-*::after {
+/* ========== CSS Reset ========== */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.primary-color {
-    color: #c78c06;
-}
-.secondary-color {
-    color: #ffe6ac;
-}
-.background-color {
-    background-color: #222;
-}
-
-header {
-    background: #fff;
-    padding: 20px;
-}
-
-header .logo img {
-    max-width: 150px;
-}
-
-header nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #222;
-    padding: 10px;
-    transition: color 0.3s ease;
-}
-
-header nav ul li a:hover {
-    color: #c78c06;
-}
-
-
-.main.banner {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #ffe6ac;
-}
-
-.main.banner h1 {
-    color: #222;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-
-#services {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.service01, .service02, .service03, .service04, .service05 {
+  }
+  
+  /* ========== Base Styles ========== */
+  body {
+    font-family: 'Open Sans', sans-serif;
     background-color: white;
-    padding: 20px;
-    border: 1px solid #ccc;
-    text-align: center;
-}
-
-button {
+    color: #222;
+    line-height: 1.6;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  button {
+    padding: 0.5em 1em;
     background-color: #c78c06;
     border: none;
-    padding: 10px;
-    color: white;
+    color: #222;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
+  }
+  
+  button:hover {
+    background-color: #b37404;
+  }
+  
+  /* Container 最大寬度 */
+  main, section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+  }
+  
+  /* ========== Header / Nav (Flexbox) ========== */
+  header {
     background-color: #222;
-}
-
-@media (min-width: 760px) {
-    header nav ul {
-        justify-content: space-between;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li a {
+    color: white;
+    padding: 0.5em 1em;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    background-color: #c78c06;
+    color: #222;
+    border-radius: 4px;
+  }
+  
+  nav input[type="text"] {
+    padding: 0.4em;
+    margin-top: 0.5em;
+  }
+  
+  /* ========== Hero Banner ========== */
+  .banner {
+    background-color: #222;
+    color: white;
+    text-align: left;
+    padding: 2em 1em;
+  }
+  
+  .banner h1 {
+    font-size: 2em;
+    margin: 0.5em 0;
+  }
+  
+  .banner p {
+    margin-bottom: 1em;
+  }
+  
+  /* ========== About Section ========== */
+  #about {
+    background-color: #ffe6ac;
+  }
+  
+  #about p {
+    margin-bottom: 1em;
+  }
+  
+  /* ========== Services (Grid) ========== */
+  #services {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    background-color: white;
+  }
+  
+  #services > div {
+    background-color: #ffe6ac;
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  /* ========== Vision Section ========== */
+  .vision {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 2em 1em;
+  }
+  
+  /* ========== Team Section ========== */
+  #team {
+    padding: 2em 1em;
+    background-color: white;
+  }
+  
+  .team-member01,
+  .team-member02 {
+    background-color: #ffe6ac;
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+  
+  /* ========== Contact Section ========== */
+  #contact {
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  
+  input, textarea {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+  }
+  
+  /* ========== Hours Section ========== */
+  .hours {
+    background-color: #ffe6ac;
+    padding: 2em 1em;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #999;
+    padding: 0.5em;
+    text-align: center;
+  }
+  
+  /* ========== Footer ========== */
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+  }
+  
+  /* ========== Responsive Design: 760px ↑ ========== */
+  @media (min-width: 760px) {
+    header {
+      flex-direction: row;
+      justify-content: space-between;
     }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        padding: 40px;
+  
+    nav {
+      flex-direction: row;
+      align-items: center;
     }
-    .main.banner {
-        padding: 80px 20px;
+  
+    nav ul {
+      flex-direction: row;
     }
-}
+  
+    .banner h1 {
+      font-size: 3em;
+    }
+  
+    #contact {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    #services {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .team-member01,
+    .team-member02 {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+    }
+  
+    form {
+      max-width: 400px;
+    }
+  }
