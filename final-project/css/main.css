@@ -365,6 +365,65 @@ footer p {
         cursor: pointer;
     }
 
+/* Two-column layouts */
+  #about {
+        flex-direction: row;
+        align-items: center;
+    }
+ 
+  #about img {
+        width: 50%;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+ 
+  #services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+ 
+  #services h2 {
+        grid-column: 1 / -1;
+    }
+ 
+  .team-member {
+        display: flex;
+        align-items: flex-start;
+    }
+ 
+  .team-member img {
+        width: 40%;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+ 
+  #contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+ 
+  #contact h2 {
+        grid-column: 1 / -1;
+    }
+ 
+  .map {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (min-width: 1024px) {
+/* Three-column services */
+  #services {
+        grid-template-columns: repeat(3, 1fr);
+    }
+ 
+  #contact {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 
 
 
