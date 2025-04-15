@@ -155,11 +155,11 @@ nav form {
   
 /*  Vision Section */
 .vision {
-    color: white;
     position: relative;
+    color: white;
     padding: 0;
     height: 250px;
-  }
+}
 
 .vision img {
   width: 100%;
@@ -208,100 +208,165 @@ nav form {
     margin-bottom: 15px;
 }
   
-.team-member01,
-.team-member02 {
-    background-color: #ffe6ac;
-    padding: 1em;
-    margin-bottom: 1em;
-  }
+.team-member h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #666;
+  margin-bottom: 10px;
+}
 
 
-
-
-
-
-  /* ========== Contact Section ========== */
-  #contact {
+/*  Contact Section */
+#contact {
     padding: 2em 1em;
     display: flex;
     flex-direction: column;
     gap: 2em;
-  }
+}
+
+#contact h2 {
+  margin-bottom: 20px;
+}
   
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-  }
+form {
+    margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
   
-  input, textarea {
-    padding: 0.5em;
-    border: 1px solid #ccc;
-  }
+input, textarea {
+     width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+
+
+/*  Hours Section */
+.hours {
+    margin-bottom: 30px;
+}
+
+.hours h2 {
+  font-size: 1.2rem;
+}
   
-  /* ========== Hours Section ========== */
-  .hours {
-    background-color: #ffe6ac;
-    padding: 2em 1em;
-  }
-  
-  table {
+table {
     width: 100%;
     border-collapse: collapse;
-  }
+    margin-top: 15px;
+}
   
-  th, td {
-    border: 1px solid #999;
-    padding: 0.5em;
-    text-align: center;
-  }
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;   
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+table th {
+  background-color: #f5f5f5;
+}
+
+/* Map */
+.map {
+  margin-bottom: 30px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+}
   
-  /* ========== Footer ========== */
-  footer {
+/*  Footer */
+footer {
     background-color: #222;
     color: white;
     text-align: center;
-    padding: 1em;
-    font-size: 0.9em;
-  }
+    padding: 20px;
+  font-size: 0.8rem;
+}
+
+footer p {
+  margin-bottom: 5px;
+}
   
-  /* ========== Responsive Design: 760px ↑ ========== */
-  @media (min-width: 760px) {
+/* Responsive Design: 768px ↑ */
+@media (min-width: 768px) {
     header {
-      flex-direction: row;
-      justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    
+    .logo {
+        background-color: transparent;
+        padding: 10px 0;
     }
   
     nav {
-      flex-direction: row;
-      align-items: center;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
     }
   
     nav ul {
-      flex-direction: row;
+        flex-direction: row;
+        margin-right: 20px;
     }
-  
-    .banner h1 {
-      font-size: 3em;
+
+    nav ul li {
+        margin: 0 10px;
     }
-  
-    #contact {
-      flex-direction: row;
-      align-items: flex-start;
+
+    nav form {
+        display: flex;
+        align-items: center;
     }
-  
-    #services {
-      grid-template-columns: repeat(3, 1fr);
+ 
+  nav form label {
+        display: none;
     }
-  
-    .team-member01,
-    .team-member02 {
-      display: flex;
-      align-items: center;
-      gap: 1em;
+ 
+  nav form input {
+        padding: 5px;
+        border-radius: 4px 0 0 4px;
+        border: none;
     }
-  
-    form {
-      max-width: 400px;
+ 
+  nav form button {
+        background-color: #f5c518;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
     }
-  }
+
+
+
+
+    
+    
