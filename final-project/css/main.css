@@ -1,45 +1,33 @@
-/* ========== CSS Reset ========== */
+/*CSS Reset*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* ========== Base Styles ========== */
-  body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: white;
+/*Base Styles*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
     color: #222;
     line-height: 1.6;
   }
   
-  img {
+img {
     max-width: 100%;
     display: block;
+    height: auto;
   }
   
-  button {
-    padding: 0.5em 1em;
-    background-color: #c78c06;
-    border: none;
-    color: #222;
-    font-weight: bold;
-    cursor: pointer;
-  }
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
   
-  button:hover {
-    background-color: #b37404;
-  }
-  
-  /* Container 最大寬度 */
-  main, section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1em;
-  }
-  
-  /* ========== Header / Nav (Flexbox) ========== */
-  header {
+/* Header / Nav (Flexbox)*/
+header {
     background-color: #222;
     color: white;
     display: flex;
@@ -47,39 +35,42 @@
     align-items: center;
     padding: 1em;
   }
+
+.logo {
+  background-color: #c78c06;
+  padding: 15px;
+  text-align: left;
+}
+
+.logo img {
+  max-width: 40px;
+}
   
-  nav {
+nav {
+    background-color: #222;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1em;
   }
   
-  nav ul {
+nav ul {
     display: flex;
     flex-direction: column;
-    gap: 0.5em;
-    list-style: none;
-    padding: 0;
+    align-items: center;
   }
+
+nav ul li {
+  margin: 5px 0;
+}
   
-  nav ul li a {
+nav ul li a {
     color: white;
-    padding: 0.5em 1em;
-    text-decoration: none;
+    font-size: 0.9rem;
   }
   
-  nav ul li a:hover,
-  nav ul li a.active {
-    background-color: #c78c06;
-    color: #222;
-    border-radius: 4px;
-  }
-  
-  nav input[type="text"] {
-    padding: 0.4em;
-    margin-top: 0.5em;
-  }
+nav form {
+  display: none; /* Hide search on mobile */
+}
   
   /* ========== Hero Banner ========== */
   .banner {
