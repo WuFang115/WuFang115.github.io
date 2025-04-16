@@ -1,3 +1,261 @@
+/*         CSS RESET         */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/*        BASIC STYLE       */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  line-height: 1.6;
+  background-color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/*        HEADER / NAV       */
+header {
+  background-color: #222;
+  padding: 1rem;
+  color: white;
+}
+
+.logo img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+nav ul li a {
+  color: #c78c06;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  border: 1px solid #c78c06;
+}
+
+form input {
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+}
+
+form button {
+  background-color: #c78c06;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+/*          BANNER           */
+.banner {
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: brightness(0.7);
+}
+
+.banner-content {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  right: 5%;
+  color: white;
+}
+
+.banner-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.banner-content p {
+  margin-bottom: 1rem;
+}
+
+.banner-content a {
+  background-color: #c78c06;
+  color: #222;
+  padding: 0.75rem 1.5rem;
+  display: inline-block;
+  font-weight: bold;
+}
+
+/*         ABOUT US          */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #ffe6ac;
+  padding: 1rem;
+}
+
+.about-text h2 {
+  color: #222;
+}
+
+/*        SERVICES GRID      */
+.services-grid {
+  display: grid;
+  gap: 1rem;
+  background-color: white;
+  margin-top: 2rem;
+}
+
+.service {
+  background-color: #ffe6ac;
+  padding: 1rem;
+}
+
+.service h3 {
+  margin: 0.5rem 0;
+}
+
+.service a {
+  display: block;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 0.75rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/*          VISION           */
+vision {
+  background-color: #222;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.vision a {
+  background-color: #c78c06;
+  color: #222;
+  padding: 0.75rem 1.5rem;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/*          TEAM             */
+.team-member {
+  background-color: #ffe6ac;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.team-member img {
+  width: 100%;
+}
+
+/*         CONTACT US        */
+.contact-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+form button {
+  background-color: #222;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+}
+
+/*      HOURS OF OPERATION   */
+.hours {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #222;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  background-color: #ffe6ac;
+}
+
+/*          FOOTER           */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #c78c06;
+}
+
+
+
+
+
+
+
+
+
 
 
 
