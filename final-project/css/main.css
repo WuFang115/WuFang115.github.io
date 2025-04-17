@@ -1,4 +1,6 @@
-/* Reset and Base Styles */
+/* =========================
+   Reset & Base Styles
+========================= */
 * {
     margin: 0;
     padding: 0;
@@ -6,480 +8,350 @@
   }
   
   body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     color: #222;
+    background-color: #fff;
   }
   
   img {
     max-width: 100%;
-    height: auto;
     display: block;
   }
   
   a {
     text-decoration: none;
+    color: inherit;
   }
   
   ul {
     list-style: none;
   }
   
-  /* Header Styles */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* =========================
+     Header
+  ========================= */
   header {
     background-color: #222;
     color: white;
   }
   
   .logo {
-    background-color: #c78c06;
-    padding: 15px;
-    text-align: left;
+    max-width: 60px;
   }
   
-  .logo img {
-    max-width: 40px;
-  }
-  
-  nav {
-    background-color: #222;
-    padding: 10px 0;
-  }
-  
-  nav ul {
+  header .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
   }
   
-  nav ul li {
-    margin: 5px 0;
-  }
-  
-  nav ul li a {
-    color: white;
-    font-size: 0.9rem;
-  }
-  
-  nav form {
-    display: none; /* Hide search on mobile */
-  }
-  
-  /* Main Content Styles */
-  main {
-    width: 100%;
-  }
-  
-  section {
-    padding: 20px;
-  }
-  
-  h1, h2, h3, h4 {
-    margin-bottom: 15px;
-  }
-  
-  p {
-    margin-bottom: 15px;
-    font-size: 0.9rem;
-  }
-  
-  /* Banner Section */
-  .banner {
-    position: relative;
-    color: white;
-    padding: 0;
-  }
-  
-  .banner img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    filter: brightness(0.7);
-  }
-  
-  .banner h1,
-  .banner p,
-  .banner a {
-    position: absolute;
-    left: 20px;
-    right: 20px;
-  }
-  
-  .banner h1 {
-    top: 70px;
-    font-size: 1.5rem;
-  }
-  
-  .banner p {
-    top: 110px;
-    font-size: 0.85rem;
-  }
-  
-  .banner a {
-    bottom: 30px;
-    background-color: #c78c06;
-    color: #222;
-    padding: 8px 15px;
-    border-radius: 4px;
-    font-weight: bold;
-    font-size: 0.9rem;
-    width: fit-content;
-  }
-  
-  /* About Section */
-  #about {
+  .navigation ul {
     display: flex;
     flex-direction: column;
-    background-color: #ffe6ac;
+    align-items: center;
+    gap: 0.5rem;
   }
   
-  .about img {
-    width: 100%;
-    height: auto;
+  .navigation a {
+    color: #c78c06;
+    font-weight: bold;
   }
   
-  /* Services Section */
-  #services {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  #services .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+  .search-form {
+    display: none;
   }
   
-  #services h2 {
-    margin-bottom: 20px;
-  }
-  
-  .service {
-    background-color: #ffe6ac;
-    padding: 2rem 1rem;
-    margin-bottom: 30px;
-  }
-  
-  .service img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .service h3 {
-    margin: 0.5rem 0;
-  }
-  
-  .service a {
-    display: block;
-    background-color: #222;
+  /* =========================
+     Banner
+  ========================= */
+  .sign-section {
+    background-image: url('../images/main-banner.jpg');
+    background-size: cover;
+    background-position: center;
     color: white;
-    text-align: center;
-    padding: 0.75rem;
+    padding: 5rem 1rem;
+    position: relative;
+  }
+  
+  .sign-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+  }
+  
+  .sign-section .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .sign-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .button-link {
+    display: inline-block;
+    background-color: #c78c06;
+    color: #222;
+    padding: 0.75rem 1.5rem;
     font-weight: bold;
     margin-top: 1rem;
   }
   
-  /* Vision Section */
-  .vision {
-    position: relative;
-    color: white;
-    padding: 0;
-    height: 250px;
-  }
-  
-  .vision img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    filter: brightness(0.7);
-  }
-  
-  .vision h2,
-  .vision p,
-  .vision a {
-    position: absolute;
-    left: 20px;
-    right: 20px;
-  }
-  
-  .vision h2 {
-    top: 50px;
-  }
-  
-  .vision p {
-    top: 90px;
-    font-size: 0.85rem;
-  }
-  
-  .vision a {
-    bottom: 30px;
-    background-color: #f5c518;
-    color: #222;
-    padding: 8px 15px;
-    border-radius: 4px;
-    font-weight: bold;
-    font-size: 0.9rem;
-    width: fit-content;
-  }
-  
-  /* Team Section */
-
-  #team {
-    max-width: 1200px;
-    margin: 0 auto;
+  /* =========================
+     About
+  ========================= */
+  .about-section {
+    background-color: #ffe6ac;
     padding: 2rem 1rem;
   }
-
-  .team-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-    margin-bottom: 0;
-  }
   
-  .team-grid.reverse {
-    direction: rtl; 
-  }
-  
-  .team-grid.reverse > * {
-    direction: ltr; 
-  }
-
-  .team-grid img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  
-  .team-member {
-    background-color: #ffe6ac;
-    padding: 2rem;
-  }
-  
-  .team-member h3 {
-    margin-bottom: 0.5rem;
-  }
-  
-  .team-member h4 {
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  .team-member hr {
-    margin: 0.5rem 0 1rem 0;
-    border: 1px solid #222;
-  }
-  
-  /* Contact Section */
-  #contact {
+  .about-section .container {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
   }
   
-  #contact h2 {
-    margin-bottom: 20px;
-  }
-  
-  #contact h3 {
-    margin-bottom: 15px;
-  }
-  
-  #contact form {
-    margin-bottom: 30px;
-  }
-  
-  #contact label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 0.9rem;
-  }
-  
-  #contact input,
-  #contact textarea {
+  .about-image img {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
   }
   
-  #contact button {
+  /* =========================
+     Services
+  ========================= */
+  .services-section {
+    padding: 2rem 1rem;
+  }
+  
+  .services-list {
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .services-item {
+    background-color: #ffe6ac;
+    padding: 1rem;
+  }
+  
+  .services-item img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  /* =========================
+     Vision
+  ========================= */
+  .vision-section {
     background-color: #222;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 0.9rem;
+    padding: 3rem 1rem;
+    text-align: center;
   }
   
-  /* Hours of Operation */
-  .hours {
-    margin-bottom: 30px;
+  /* =========================
+     Team
+  ========================= */
+  .team-section {
+    padding: 2rem 1rem;
+    background-color: #ffe6ac;
   }
   
-  .hours h2 {
-    font-size: 1.2rem;
+  .team-grid-final {
+    display: grid;
+    gap: 2rem;
+    background-color: #ffe6ac;
   }
   
-  table {
+  .team-box.photo img {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
   }
   
-  table th,
-  table td {
-    border: 1px solid #ddd;
+  /* =========================
+     Contact
+  ========================= */
+  .contact-section {
+    padding: 2rem 1rem;
+  }
+  
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
     padding: 10px;
-    text-align: left;
-    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
   }
   
-  table th {
-    background-color: #f5f5f5;
+  .contact-form button {
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
   }
   
-  /* Map */
   .map {
-    margin-bottom: 30px;
-  }
-  
-  .map iframe {
     width: 100%;
     height: 250px;
     border: none;
   }
   
-  /* Footer */
+  .operation-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .operation-table th,
+  .operation-table td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+  }
+  
+  /* =========================
+     Footer
+  ========================= */
   footer {
     background-color: #222;
     color: white;
     text-align: center;
-    padding: 20px;
-    font-size: 0.8rem;
+    padding: 1rem;
+    font-size: 0.9rem;
   }
   
-  footer p {
-    margin-bottom: 5px;
-  }
-  
-  /* Icons */
-  .fa-caret-right {
-    margin-left: 5px;
-  }
-  
-  /* Media Queries for larger screens */
-  @media (min-width: 768px) {
-    /* Header */
-    header {
-      display: flex;
+  /* =========================
+     Media Queries
+  ========================= */
+  @media (min-width: 760px) {
+    header .container {
+      flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      padding: 0 20px;
     }
-   
-    .logo {
-      background-color: transparent;
-      padding: 10px 0;
-    }
-   
-    nav {
-      background-color: transparent;
-      display: flex;
-      align-items: center;
-    }
-   
-    nav ul {
+  
+    .navigation ul {
       flex-direction: row;
-      margin-right: 20px;
+      justify-content: flex-end;
+      gap: 1rem;
     }
-   
-    nav ul li {
-      margin: 0 10px;
-    }
-   
-    nav form {
+  
+    .search-form {
       display: flex;
       align-items: center;
     }
-   
-    nav form label {
-      display: none;
-    }
-   
-    nav form input {
-      padding: 5px;
+  
+    .search-form input {
+      padding: 5px 10px;
       border-radius: 4px 0 0 4px;
       border: none;
+      width: 200px;
     }
-   
-    nav form button {
-      background-color: #f5c518;
-      border: none;
-      padding: 5px 10px;
+  
+    .search-form button {
+      background-color: #222;
+      border: 1px solid #c78c06;
+      padding: 5px 15px;
       border-radius: 0 4px 4px 0;
+      color: #c78c06;
       cursor: pointer;
     }
-   
-    /* Two-column layouts */
-    #about {
+  
+    .about-section .container {
       flex-direction: row;
       align-items: center;
     }
-   
-    #about img {
-      width: 50%;
-      margin-right: 20px;
-      margin-bottom: 0;
+  
+    .about-image,
+    .text-wrapper {
+      flex: 1;
     }
-   
-    #services {
-      display: grid;
+  
+    .team-grid-final {
       grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
     }
-   
-    #services h2 {
-      grid-column: 1 / -1;
+  
+    .contact-list {
+      flex-direction: row;
     }
-   
-    .team-member {
-      display: flex;
-      align-items: flex-start;
-    }
-   
-    .team-member img {
-      width: 40%;
-      margin-right: 20px;
-      margin-bottom: 0;
-    }
-   
-    #contact {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-   
-    #contact h2 {
-      grid-column: 1 / -1;
-    }
-   
-    .map {
-      grid-column: 1 / -1;
+  
+    .contact-item {
+      flex: 1;
     }
   }
   
-  @media (min-width: 1024px) {
-    /* Three-column services */
-    #services {
-      grid-template-columns: repeat(3, 1fr);
+  @media (min-width: 1200px) {
+    .services-list {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 2rem;
     }
-   
-    /* Three-column contact */
-    #contact {
-      grid-template-columns: repeat(3, 1fr);
+  
+    .services-item {
+      height: 100%;
+    }
+  
+    .services-item:nth-child(1) {
+      grid-column: 1 / 4;
+    }
+  
+    .services-item:nth-child(2) {
+      grid-column: 4 / 7;
+    }
+  
+    .services-item:nth-child(3) {
+      grid-column: 1 / 3;
+    }
+  
+    .services-item:nth-child(4) {
+      grid-column: 3 / 5;
+    }
+  
+    .services-item:nth-child(5) {
+      grid-column: 5 / 7;
+    }
+  
+    .team-section {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+    .team-grid-final {
+      grid-template-columns: 1fr 1fr;
+      background-color: transparent;
+    }
+  
+    .team-box.text {
+      background-color: #ffe6ac;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem;
+    }
+  
+    .team-box.text:nth-child(3) {
+      order: 1;
+    }
+  
+    .team-box.photo:nth-child(4) {
+      order: 2;
     }
   }
